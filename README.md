@@ -24,6 +24,7 @@ istenen
 `@include('layouts.site.file')`
 
 regex : `(<\?php include 'includes/)(.*)(\.php' \?>)`
+
 replace string : `@include('layouts.site.$2')`
 
 Örnek;
@@ -32,4 +33,5 @@ istenen
 `['someKey']`
 
 regex : `(\[)(.*)(\]) //'[' regexpte özel karakter olduğu için '\' kullandık `
+
 replace string : `['$2']`
