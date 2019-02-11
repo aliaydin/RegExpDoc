@@ -3,7 +3,8 @@
 
 Phpstorm içinde regexp ile stringi parçalar halinde alıp düzenlemek gerekti.
 
-Örnek;
+**Örnek;**
+
 `<li><img src="assets/images/resim.png" alt="Resim"></li>`
 
 yukarıdaki kodu
@@ -18,7 +19,9 @@ her bir parantez bir grup olarak yakalanır ve sırasıyla `$1,$2...$n` ile eri�
 
 replace alanı : `{{ asset('images/site/$2$3') }}" alt`
 
-Örnek;
+
+**Örnek;**
+
 `<?php include 'includes/file.php' ?>`
 istenen
 `@include('layouts.site.file')`
@@ -27,7 +30,9 @@ regex : `(<\?php include 'includes/)(.*)(\.php' \?>)`
 
 replace string : `@include('layouts.site.$2')`
 
-Örnek;
+
+**Örnek;**
+
 `[someKey]`
 istenen
 `['someKey']`
