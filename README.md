@@ -40,3 +40,13 @@ istenen
 regex : `(\[)(.*)(\]) //'[' regexpte özel karakter olduğu için '\' kullandık `
 
 replace string : `['$2']`
+
+**Örnek;**
+
+`<?php include('file.php') ?>`
+istenen
+`@include('layouts.site.file')`
+
+regex : `(<\?php include ')(.*?)(\.php' \?>)`
+
+raplace string : `@include('layouts.site.$2')`
